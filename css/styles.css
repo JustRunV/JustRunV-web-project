@@ -9,6 +9,7 @@ body {
 main {
     max-width: 900px;
     margin: auto;
+    padding: 20px;
 }
 
 nav {
@@ -27,6 +28,10 @@ nav a {
 nav a:hover {
     color: yellow;
     text-decoration: underline;
+}
+
+a:hover {
+    color: forestgreen;
 }
 
 h1 {
@@ -68,7 +73,7 @@ li {
 img {
     display: block;
     max-width: 100%;
-    width: 320px;
+    width: 400px;
     margin: 20px auto;
     border-radius: 10px;
 }
@@ -92,7 +97,7 @@ footer {
 .trail-table th, 
 .trail-table td {
     border: 1px solid #2f2f2f;
-    padding: 10px 12 px;
+    padding: 10px 12px;
     text-align: left;
 }
 
@@ -100,4 +105,38 @@ footer {
     background-color: #e6f2e6;
     color: darkgreen;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .trail-table {
+        font-size: 12px;
+    }
+}
+
+button {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: forestgreen;
 }
